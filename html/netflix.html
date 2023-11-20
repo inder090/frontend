@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>netflix</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+        }
+
+        .bg-img {
+            background-color: black;
+            opacity: 50%;
+        }
+
+        .logo {
+            position: absolute;
+            top: 0%;
+            left: 2%;
+        }
+
+        .login {
+            border: 1px solid black;
+            background-color: rgba(0,0,0,.75);
+            width: 35%;
+            height: 100%;
+            position: absolute;
+            top: 18%;
+            left: 32%;
+            border-radius:1% ;
+            color:aliceblue;
+            padding: 60px;
+        }
+        .sign-in{
+            font-family:  Netflix Sans,Helvetica Neue,Segoe UI,Roboto,Ubuntu,sans-serif;
+            font-size: 200%;
+            
+            padding-bottom: 25px;
+        }
+        .input-type{
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 40px;
+                       
+        }
+         input{
+            height: 50px;
+            background-color: #333;
+            border: none;
+            border-radius:5px;
+            padding: 15px;
+            font-size: 15px;
+        }
+        .btn{
+            padding-bottom: 50px;
+        }
+        button{
+            height: 50px;
+            width: 100%;
+            border-radius:5px;
+            border: none;
+            background-color: #e50914;
+            color:aliceblue;
+            font-size:larger;
+        }
+        .left{
+           color: #6d6c6c;
+           font-family: sans-serif;
+           font-size: 12px;
+        }
+        .rm{
+            position: absolute;
+            bottom: 271px;
+            left: 80px;
+        }
+        .right a{
+            color:#6d6c6c;
+            text-decoration: none;
+            font-family: sans-serif;
+        }
+        .right a:hover{
+            color:#6d6c6c;
+            text-decoration: underline;
+            font-family: sans-serif;
+        }
+        .right{
+            position: absolute;
+            bottom: 271px;
+            right: 60px;
+
+        }
+        .link{
+            color:#6d6c6c;
+            font-family: sans-serif;
+        }
+         #li{
+            text-decoration: none;
+            color: white;
+            font-family: sans-serif;
+        }
+        #li:hover{
+            text-decoration: underline;
+            color: white;
+            font-family: sans-serif;
+        }
+        .link span{
+            font-size:15px ;
+        }
+        .link a{
+            text-decoration: none;
+            color: rgb(34, 34, 251);
+        }
+        .link a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+        .footer{
+            border: 1px solid black;
+            width: 100%;
+            height: 40%;
+            background-color: rgba(0,0,0,.75);
+            color: #737373;
+            position: absolute;
+            top: 130%;
+            padding-left:100px ;
+            padding-top: 30px;
+        }
+        .footer a{
+            color: #737373;
+            text-decoration: none;
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            font-family: sans-serif;
+        }
+        select{
+            background-color: rgba(0,0,0,.75);
+            color:#737373;
+            width: 100px;
+            height: 40px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="bg-img">
+            <img src="https://assets.nflxext.com/ffe/siteui/vlv3/77d35039-751f-4c3e-9c8d-1240c1ca6188/cf244808-d722-428f-80a9-052acdf158ec/IN-en-20231106-popsignuptwoweeks-perspective_alpha_website_large.jpg"
+                alt="" width="100%" height="1050vh">
+
+        </div>
+        <div class="logo">
+            <img src="pngwing.com (3).png" alt="" width="17%">
+        </div>
+        <div class="login">
+            <div class="sign-in">
+                Sign In
+            </div>
+            <div class="input-type">
+                <input type="text" placeholder="Email or phone number" ><br>
+                <input type="password" placeholder="Password">
+            </div>
+            <div class="btn">
+                <button>Sign In</button>
+                <div class="left">
+                    <input type="checkbox" name="" id="" style="width: 15px; " >
+                    <span class="rm">Remember me</span>
+                </div>
+                <div class="right">
+                    <a href="" >Need help?</a>
+                </div>
+            </div>
+            <div class="link">
+                New to Netflix?
+                <a href="" id="li"> Sign up now.</a><br><br>
+                <span>This page is protected by Google reCAPTCHA to ensure you're not a bot. </span>
+                <a href="" >Learn more</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="">Questions? Call
+                <a href="">000-800-919-1694</a>
+            </div>
+            <br><br>
+            <div class="">
+                <ul>
+                    <li>FAQ</li>
+                    <li>Help Centre</li>
+                    <li>Terms of Use</li>
+                    <li>Privacy</li> 
+                
+                    <li>Cookie Preferences</li>
+                    <li>Corporate Information</li>
+                </ul>
+            </div>
+            <br><br>
+            <div class="">
+                <select name="list" id="">
+                    <option value="">English</option>
+                    <option value="">हिंदी</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

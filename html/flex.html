@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+      
+        body{
+
+            /* border: 2px solid black; */
+            /* background-color: black; */
+        }
+        .container{
+            /* border: 2px solid black; */
+            height: 99vh;
+            width: 99vw;
+            background-color: burlywood;
+            display: flex;
+            /* min-width: 600px;
+            max-width: 900px;
+            max-height: 1000px;
+            min-height: 40px; */
+           
+            
+        }
+        .box{
+            height: 100%;
+            width: 50%;
+            /* border:2px solid blue; */
+            /* display: inline-block; */
+        }
+        #ib1{
+            width: 100%;
+            height:60% ;
+            background-color: rgb(252, 51, 85);
+        }
+        #ib2{
+            width: 100%;
+            height:40% ;
+            /* background-color: rgb(252, 51, 85); */
+        }
+        .ib{
+             display: flex; 
+
+        }
+        
+        #oib2{
+            height: 100%;
+            width: 50%;
+            background-color: greenyellow;
+           
+           
+        }
+        #oib1{
+            height: 100%;
+            width: 50%;
+            /* background-color: greenyellow; */
+           
+        }
+        .null1{
+            width: 100%;
+            height: 80%;
+            background-color: darkgrey;
+        }
+        .null2{
+            width: 100%;
+            height: 20%;
+            background-color:darkblue;
+        }
+        .innerb1{
+            width: 100%;
+            height: 30%;
+            background-color:orange;
+        }
+        .innerb2{
+            width: 100%;
+            height: 30%;
+            background-color:darkblue;
+            display: flex;
+        } .innerb3{
+            width: 100%;
+            height: 40%;
+            background-color:skyblue;
+        }
+        .innb1{
+            width: 50%;
+            height:100%;
+            background-color:rgb(238, 19, 194);
+        }
+        .innb2{
+            width: 50%;
+            height:100%;
+            background-color:rgb(90, 89, 89);
+        }
+
+        
+      
+       
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        
+       <div class="box">
+        <div class="ib" id="ib1"></div>
+        <div class="ib" id="ib2">
+            <div class="oib" id="oib1">
+                <div class="null1"></div>
+                <div class="null2"></div>
+            </div>
+            <div class="oib" id="oib2"></div>
+        </div>
+       </div>
+       <div class="box">
+            <div class="innerb1"></div>
+            <div class="innerb2">
+                <div class="innb1"></div>
+                <div class="innb2"></div>
+            </div>
+            <div class="innerb3"></div>
+       </div>
+
+    </div>
+
+   
+</body>
+</html>

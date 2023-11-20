@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+
+        body {
+
+            background-color: #f5f7f8 !important;
+        }
+
+        .header {
+
+            height: 10vh;
+            /* border: 2px solid black; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #4d636f;
+            color: #f5f7f8;
+        }
+
+        .left {
+
+            width: 40%;
+            height: 100%;
+            font-family: sans-serif;
+
+        }
+
+        .right {
+
+            width: 10%;
+            height: 100%;
+            /* border: 2px solid black; */
+        }
+
+        ul {
+
+            display: flex;
+            flex-wrap: wrap;
+            /* align-items: center; */
+            align-items: center;
+            height: 100%;
+
+        }
+
+        ul li {
+
+            list-style: none;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #logo {
+            background-color: #3a4b53;
+            height: 100%;
+            width: 30%;
+            word-spacing: 5px;
+
+        }
+
+        #logo:hover {
+            background-color: #f5f7f8;
+            color: black;
+        }
+
+        .button {
+            height: 100%;
+            width: 15%;
+        }
+
+        .button:hover {
+            background-color: #f5f7f8;
+            color: black;
+        }
+
+
+
+
+        .box1 {
+            width: 28%;
+            height: 100vh;
+            border: 1px solid black;
+
+        }
+
+        .box2 {
+            width: 45%;
+            height: 100vh;
+            border: 1px solid rgb(240, 64, 64);
+        }
+
+        .box3 {
+            width: 18%;
+            height: 100vh;
+            border: 1px solid rgb(124, 23, 224);
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-evenly;
+            margin-top: 20px;
+
+        }
+
+        .profile {
+
+            width: 100%;
+            height: 50%;
+            background-color: white;
+            border-radius: 5%;
+            box-shadow: 1px 1px 5px;
+
+        }
+
+        .img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px;
+            font-family: sans-serif;
+        }
+
+        .in {
+            padding: 20px 20px;
+            word-spacing: 5px;
+            font-family: sans-serif;
+        }
+
+        .group {
+            width: 100%;
+            height: 20%;
+            border: 1px solid black;
+            display: flex;
+            flex-direction: column;
+           
+        }
+        .list{
+            
+            height: 33%;
+            width: 100%;
+            padding: 10px;
+            word-spacing: 5px;
+            background-color: #7d97a5;
+            color: #f5f7f8;
+            font-family: sans-serif;
+        }
+        .list:hover{
+            background-color: #fff;
+            color:black;
+        }
+        .intrest{
+            height: 20%;
+            border: 1px solid black;
+            font-family: sans-serif;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        .inner-box-1{
+
+           
+           padding: 10px;
+           background-color: #fff;
+           border-radius: 8px;
+           box-shadow: 0px 0px 10px rgb(158, 157, 157);
+        }
+
+        .inner-box-1 p{
+
+            color: gray;
+            margin: 10px 0px;
+            font-size: 20px;
+
+            
+        }
+
+        .inner-box-1 input{
+
+            width: 100%;
+            padding: 10px;
+        }
+
+        .inner-box-1 button{
+
+            padding: 10px;
+            background-color: #7d97a5;
+            border: none;
+            color: white;
+            font-weight: bold;
+
+        }
+
+        .inner-box-2{
+
+            border: 2px solid black;
+            padding: 20px;
+        }
+
+        .inner-box-2 .logo-image{
+             
+            padding: 20px 0px;
+        }
+
+        .inner-box-2 .content p{
+
+            font-size: 20px;
+            text-align: justify;
+            font-family: sans-serif;
+            word-spacing: 4px;
+            margin: 20px 0px
+
+        }
+    </style>
+    <script src="https://kit.fontawesome.com/0cc57c0ce8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="header">
+        <div class="left">
+
+            <ul>
+                <li id="logo"><i class="fa-solid fa-house-chimney"></i> Logo</li>
+                <li class="button"><i class="fa-solid fa-earth-africa"></i></li>
+                <li class="button"><i class="fa-solid fa-user"></i></li>
+                <li class="button"><i class="fa-solid fa-envelope"></i></li>
+                <li class="button"><i class="fa-solid fa-bell"></i></li>
+            </ul>
+
+        </div>
+
+        <div class="right">
+
+            <ul>
+                <li><img src="https://www.w3schools.com/w3images/avatar2.png" alt=""
+                        style="width: 30%;border-radius: 50%;"></li>
+            </ul>
+        </div>
+
+    </div>
+    <div class="box">
+
+        <div class="box1">
+
+            <div class="profile">
+                <div class="img">
+
+                    <h1>My Profile</h1>
+                    <img src="https://www.w3schools.com/w3images/avatar3.png" alt=""
+                        style="width: 30%;height: 40% ;border-radius: 50%;">
+                </div>
+                <div class="in">
+                    <hr><br>
+                    <i class="fa-solid fa-pencil" class="p"></i> Designer, UI <br><br>
+                    <i class="fa-sharp fa-solid fa-house-chimney" class="p"></i> London, UK <br><br>
+
+                    <i class="fa-solid fa-cake-candles" class="p"></i> April 1, 1988
+                </div>
+            </div>
+            <div class="group">
+                <div class="list">
+                    <i class="fa-solid fa-circle-notch"></i> My Groups
+                </div>
+                <div class="list">
+                    <i class="fa-solid fa-calendar-check"></i> My Events
+                </div>
+                <div class="list">
+                    <i class="fa-solid fa-users"></i> My Photos
+                </div>
+
+
+            </div>
+            <div class="intrest">
+                <h4>Interests</h4>
+                <p class="text">News</p>
+                <p class="text">W3Schools</p>
+                <p class="text">Lables</p>
+                <p class="text">Games</p>
+                <p class="text">Friends</p>
+                <p class="text">Games</p>
+                <p class="text">Friends</p>
+                <p class="text">Food</p>
+                <p class="text">Design</p>
+                <p class="text">Art</p>
+                <p class="text">Photos</p>
+                
+
+            </div>
+
+
+        </div>
+        <div class="box2">
+
+            <div class="inner-box-1">
+                <p>Social Media template by w3.css</p>
+                <input type="text"> <br> <br>
+                <button>Submit</button>
+
+               
+            </div>
+
+            <div class="inner-box-2">
+                <div class="logo-image">
+                    <img src="https://www.w3schools.com/w3images/avatar2.png" alt=""
+                        style="width: 15%;border-radius: 50%;">
+                    <span>John Doe</span>
+                </div>
+                <hr>
+                <div class="content">
+                    <p>
+                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur maiores magnam itaque culpa saepe laborum veritatis aperiam provident soluta dolorum adipisci eius sapiente ipsam, labore modi necessitatibus nostrum vel quas!
+                    </p>
+                </div>
+                <div class="inner-box-2-image">
+                    <img src="https://www.w3schools.com/w3images/lights.jpg" alt="" width="49%">
+                    <img src="https://www.w3schools.com/w3images/nature.jpg" alt="" width="49%">
+                </div>
+                <div class="button">
+                    <button>Like</button>
+                    <button>Comment</button>
+                </div>
+            </div>
+
+        
+
+        </div>
+        <div class="box3">
+    
+        </div>
+    </div>
+
+</body>
+
+</html>
