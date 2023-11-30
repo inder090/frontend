@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+        }
+        .box1{
+            border: 5px solid gray;
+            background-color: black;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+
+        }
+        .box2{
+            border: 5px solid gray;
+            background-color: black;
+            height: 100%;
+            display: grid;
+            grid-template-rows: 1fr 2fr;
+
+        }
+       
+        .inner-box1{
+            
+            border: 5px solid gray;
+        }
+        .b1{
+            background-color: red;
+        }
+        .b2{
+            background-color: rgb(203, 201, 201);
+        }
+        .i-box{
+            border: 5px solid gray;
+        }
+        .i-box1{
+            border: 5px solid gray;
+            
+            /* height: 100%; */
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+        }
+        .i-box11{
+            border: 5px solid gray;
+            background-color: aqua;
+        }
+        .i-box12{
+            border: 5px solid gray;
+            background-color: yellow;
+        }
+        .i-box21{
+            border: 5px solid gray;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+        }
+        .i-box22{
+            border: 5px solid gray;
+            background-color: red;
+        }
+        .i-box2{
+            border: 5px solid gray;
+            
+            /* height: 100%; */
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+
+        }
+        .i-box211{
+            border: 5px solid gray;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+        /* .i-box212{
+            border: 5px solid gray;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        } */
+        .i-box212{
+            border: 5px solid gray;
+            display: grid;
+            grid-template-columns:2fr 1fr;
+        }
+        .i-box2111{
+            border: 5px solid gray;
+            background-color: rgb(200, 255, 0);
+        }
+        .i-box2112{
+            border: 5px solid gray;
+            background-color: rgb(213, 209, 209);
+        }
+        .i-box2121{
+            border: 5px solid gray;
+            background-color: rgb(193, 10, 10);
+        }
+        .i-box2122{
+            border: 5px solid gray;
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1">
+            <div class="inner-box1 b1"></div>
+            <div class="inner-box1 b2"></div>
+        </div>
+        <div class="box2">
+            <div class="i-box1">
+                <div class="i-box11"></div>
+                <div class="i-box12"></div>
+            </div>
+            <div class="i-box2">
+                <div class="i-box21">
+                    <div class="i-box211">
+                        <div class="i-box2111"></div>
+                        <div class="i-box2112"></div>
+                    </div>
+                    <div class="i-box212">
+                        <div class="i-box2121"></div>
+                        <div class="i-box2122"></div>
+                    </div>
+                </div>
+                <div class="i-box22"></div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
