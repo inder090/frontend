@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: black;
+        }
+
+        .box {
+            background-color: white;
+            width: 40vw;
+            
+            position: absolute;
+            left: 30%;
+            top: 20%;
+            padding: 35px;
+            border-radius: 5px;
+        }
+
+        .box select {
+            padding: 5px;
+            width: 50%;
+
+        }
+
+        button {
+            height: 7vh;
+            width: 8%;
+            border-radius: 50%;
+            /* border: none; */
+            border: 1px solid black;
+
+        }
+
+        #red {
+            background-color: red;
+        }
+
+        #yellow {
+            background-color: yellow;
+        }
+
+        #black {
+            background-color: black;
+        }
+
+        #blue {
+            background-color: blue;
+        }
+        .butt button{
+            height: 8vh;
+            width: 8%;                      
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+        <select name="" id="select">
+            <option value="">None</option>
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="java-script">JAVA SCRIPT</option>
+        </select> <br> <br>
+        <button id="red"></button>
+        <button id="yellow"></button>
+        <button id="black"></button>
+        <button id="blue"></button>
+        <p id="p"></p>
+        <div class="butt">
+            <button id="+">+</button>
+            <button id="-">-</button>
+            <button id="upr">upr</button>
+            <button id="lwr">lwr</button>
+        </div>
+
+    </div>
+
+    <script>
+        document.getElementById("select").onclick = function () {
+            let a = document.getElementById("select").value;
+            if (a == 'html') {
+
+                document.getElementById("p").innerText = "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content. It is often assisted by technologies such as Cascading Style Sheets and scripting languages such as JavaScript.";
+            }
+            else if (a == 'css') {
+                document.getElementById("p").innerText = "Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.";
+            }
+            else if (a == 'java-script') {
+                document.getElementById("p").innerText = "JavaScript, often abbreviated as JS, is a programming language and core technology of the World Wide Web, alongside HTML and CSS. As of 2023, 98.7% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries.";
+            }
+            else {
+                document.getElementById("p").innerText = "";
+            }
+        }
+        
+        document.getElementById("red").onclick = function () {
+            document.body.style.backgroundColor = "red";
+        }
+        document.getElementById("black").onclick = function () {
+            document.body.style.backgroundColor = "black";
+        }
+        document.getElementById("yellow").onclick = function () {
+            document.body.style.backgroundColor = "yellow";
+        }
+        document.getElementById("blue").onclick = function () {
+            document.body.style.backgroundColor = "blue";
+        }
+
+        let a=16;
+        document.getElementById("+").onclick=function(){
+            a++;
+            document.getElementById("p").style.fontSize=a+"px";
+        }
+        document.getElementById("-").onclick=function(){
+            a--;
+            document.getElementById("p").style.fontSize=a+"px";
+        }
+        document.getElementById("upr").onclick=function(){
+           
+            document.getElementById("p").style.textTransform="uppercase";
+        }
+        document.getElementById("lwr").onclick=function(){
+           
+           document.getElementById("p").style.textTransform="lowercase";
+       }
+
+    </script>
+
+</body>
+
+</html>

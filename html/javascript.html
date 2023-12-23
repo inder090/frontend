@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text" id="inp">
+    <button id="btn">submit</button> -->
+
+    <script>
+        // var i=9;
+        // console.log(i);
+        // alert(i);
+        // document.write(i);
+        // const j=8;
+        // console.log(j);
+        // let k=0;
+        // console.log(k);
+        // console.log(a);
+        // var a=7;
+        // let a=150;
+        // let b=20;
+        // let c=70;
+        // let d=400;
+        // let max;
+        // if(a>b){
+        //     if(a>c){
+        //         if(a>d){
+        //             max=a;
+        //         }
+        //         else{
+        //             max=d;
+        //         }
+        //     } 
+        //     else{
+        //         if(c>d){
+        //             max=c;
+        //         }
+        //         else{
+        //             max=d;
+        //         }
+        //     }         
+        // }
+        // else {
+        //     if(b>c){
+        //         if(b>d){
+        //             max=b;
+        //         }
+        //         else{
+        //             max=d;
+        //         }
+        //     } 
+        //     else{
+        //         if(c>d){
+        //             max=c;
+        //         }
+        //         else{
+        //             max=d;
+        //         }
+        //     }   
+        // }
+        // document.write(max);
+    //    let a=1;
+    //    switch(a){
+    //        case 1:
+    //         document.write("sunday");
+
+    //         break;
+
+    //         case 2:
+    //         document.write("munday");
+    //         break;
+
+    //         case 3:
+    //         document.write("tuesday");
+    //         break;
+    //         case 4:
+    //         document.write("wednesday");
+    //         break;
+    //         case 5:
+    //         document.write("thrusday");
+    //         break;
+    //         case 6:
+    //         document.write("friday");
+    //         break;
+    //         case 7:
+    //         document.write("satarday");
+    //         break;
+    //    }
+    //    document.write(" ");
+    //    a%2==0 ? document.write("even"):document.write("odd");
+
+        // document.getElementById("btn").onclick=function(){
+        //     let a=document.getElementById("inp").value;
+            
+        //     if((a>='a' && a<='z') || (a>='A' && a<='Z')){
+        //         console.log("alphabet");
+        //     }
+        //     else {
+        //         console.log("special");
+        //     }
+
+        // }
+        document.getElementById("names").onclick=function(){
+              let a = document.getElementById("names").value;
+              console.log(a)
+              if (a=='inder') {
+                document.getElementById("para").innerText="reaxt"
+              } else if(a=='kk') {
+                document.getElementById("para").innerText="Angu"
+                
+              }else if(a=='gk'){
+                document.getElementById("para").innerText="jango"
+
+              }
+        }
+
+        document.getElementsByClassName("box").onclick = function(){
+            let a=document.getElementsByClassName("box").value;
+            if(a=="red"){
+                document.body.style.backgroundColor="red";
+            }
+        }
+
+
+    </script>
+
+</body>
+</html>

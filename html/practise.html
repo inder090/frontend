@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name=""  class="inp" placeholder="first name"><br>
+    <input type="text" name=""  class="inp" placeholder="middle name"><br>
+    <input type="text" name=""  class="inp" placeholder="last name"><br>
+    <input type="text" name=""  class="inp" placeholder="ug"><br>
+    <input type="text" name=""  class="inp" placeholder="year"><br>
+    <button id="btn">submit</button>
+
+
+    <script>
+        document.getElementById("btn").onclick=function(){
+            // let a=document.getElementById("inp").value;
+            // let a=document.getElementsByClassName("inp")[4].value;
+            // console.log(a);
+            // let l=document.getElementsByClassName("inp");
+            // for(let i=0;i<l.length;i++){
+            // //     let a=document.getElementsByClassName("inp")[i].value;
+            //     let a=l[i].value;
+            //     console.log(a);
+            // }
+            let l=document.querySelectorAll("input");
+            for(let i of l){
+                console.log(i.value);
+            }
+        }
+
+    </script>
+</body>
+</html>
