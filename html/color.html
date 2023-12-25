@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .main {
+            width: 90%;
+            border: 1px solid black;
+            align-items: center;
+            padding: 15px;
+            margin-left: 15px;
+        }
+
+        .box {
+            border: 1px solid black;
+            width: 23%;
+            height: 30vh;
+            margin-top: 15px;
+        }
+        .boxes{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <input type="text" name="" id="color" placeholder="color">
+        <input type="text" name="" id="no" placeholder="box-no">
+        <button id="btn">submit</button>
+        <div class="boxes">
+            <div class="box"  id="box1">1</div>
+            <div class="box" id="box2">2</div>
+            <div class="box" id="box3">3</div>
+            <div class="box" id="box4">4</div>
+            <div class="box" id="box5">5</div>
+            <div class="box" id="box6">6</div>
+            <div class="box" id="box7">7</div>
+            <div class="box" id="box8">8</div>
+        </div>
+    </div>
+
+    <script>
+
+        document.getElementById("btn").onclick=function(){
+            let a=document.getElementById("color").value;
+            let b=document.getElementById("no").value;
+            // console.log(a);
+            // document.getElementById("box3").style.background=document.getElementById("color").value;
+            // switch(b){
+            //     case 1:
+            //     document.getElementById("box1").style.background=document.getElementById("color").value; 
+            //     break;
+            //     case 2:
+            //     document.getElementById("box2").style.background=document.getElementById("color").value; 
+            //     break;
+            //     case 3:
+            //     document.getElementById("box3").style.background=document.getElementById("color").value; 
+            //     break;
+            //     case 4:
+            //     document.getElementById("box4").style.background=document.getElementById("color").value; 
+            //     break;
+            //     case 5:
+            //     document.getElementById("box5").style.background=document.getElementById("color").value; 
+            //     break;
+            //     case 6:
+            //     document.getElementById("box6").style.background=document.getElementById("color").value; 
+            //     break;
+            //     case 7:
+            //     document.getElementById("box7").style.background=document.getElementById("color").value; 
+            //     break;
+            //     case 8:
+            //     document.getElementById("box8").style.background=document.getElementById("color").value; 
+            //     break;
+            // }
+            if(b==1){
+                document.getElementById("box1").style.background=document.getElementById("color").value;           
+            }else if(b==2){
+                document.getElementById("box2").style.background=document.getElementById("color").value;            
+            }else if(b==3){
+                document.getElementById("box3").style.background=document.getElementById("color").value;           
+            }else if(b==4){
+                document.getElementById("box4").style.background=document.getElementById("color").value;           
+            }else if(b==5){
+                document.getElementById("box5").style.background=document.getElementById("color").value;           
+            }else if(b==6){
+                document.getElementById("box6").style.background=document.getElementById("color").value;           
+            }else if(b==7){
+                document.getElementById("box7").style.background=document.getElementById("color").value;           
+            }else{
+                document.getElementById("box8").style.background=document.getElementById("color").value;           
+            }
+
+        }
+
+    </script>
+</body>
+
+</html>
