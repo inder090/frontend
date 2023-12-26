@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" name="" id="">
+    <input type="text" name="" id="">
+    <select name="" id="">
+        <option value="none">none</option>
+        <option value="add">addtion</option>
+        <option value="sub">sub</option>
+        <option value="multi">multi</option>
+        <option value="div">division</option>
+    </select>
+    <button id="btn">submit</button>
+
+    <script>
+         document.getElementById("btn").onclick=function(){
+            let a=Number(document.querySelectorAll("input")[0].value);
+            let b=Number(document.querySelectorAll("input")[1].value);
+            let c=document.querySelectorAll("select")[0].value;
+            console.log(c);
+             if(c=="add"){
+                console.log(a+b);
+             }
+             else if(c=="sub"){
+                console.log(a-b);
+             }
+             else if(c=="multi"){
+                console.log(a*b);
+             }
+             else if(c=="div"){
+                console.log(a/b);
+             }
+        }
+    </script>
+
+</body>
+</html>
