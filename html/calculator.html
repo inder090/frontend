@@ -4,9 +4,58 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+      body{
+         display: flex;
+         justify-content: center;
+      }
+      .box{
+         width: 30%;
+         height: 80vh;
+         border: 1px solid black;
+         padding: 10px;
+         display: flex;
+         flex-wrap: wrap;
+         /* align-items: center; */
+         justify-content: center;
+         background-color:rgb(14, 14, 14); 
+         border-radius: 15px;        
+      }
+
+      button{
+         width: 16%;
+         height: 10vh;
+         border-radius: 50%;
+         /* border: none; */
+         background-color: rgb(209, 209, 209);
+         margin-top: 10px;
+         margin-left: 5px;
+         border: solid rgb(93, 92, 92);
+         font-size: 15px;
+         /* text-align: center; */
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         
+      }
+
+      input{
+         width: 90%;
+         height: 15vh;
+         border: 2px solid black;
+         border-radius: 5px;
+         font-size: 20px;
+         background-color: rgb(170, 250, 250);
+         text-align: right;
+      }
+      .col{
+         background-color: rgb(253, 104, 5);
+         color: white;
+      }
+    </style>
 </head>
 <body>
-    <input type="text" name="" id="">
+    <!-- <input type="text" name="" id="">
     <input type="text" name="" id="">
     <select name="" id="">
         <option value="none">none</option>
@@ -15,9 +64,9 @@
         <option value="multi">multi</option>
         <option value="div">division</option>
     </select>
-    <button id="btn">submit</button>
+    <button id="btn">submit</button> -->
 
-    <script>
+    <!-- <script>
          document.getElementById("btn").onclick=function(){
             let a=Number(document.querySelectorAll("input")[0].value);
             let b=Number(document.querySelectorAll("input")[1].value);
@@ -36,7 +85,57 @@
                 console.log(a/b);
              }
         }
-    </script>
+    </script> -->
 
+    <div class="box">
+       <input type="text" name="" id="" placeholder="0">
+       <button class="col">+</button>
+       <button class="col">-</button>
+       <button class="col">*</button>      
+       <button class="col">/</button><br>
+       <button class="col">%</button>
+       <button>1</button>
+       <button>2</button>
+       <button>3</button>
+       <button>4</button><br>
+       <button>5</button>
+       <button>6</button>
+       <button>7</button>      
+       <button>8</button><br>
+       <button>9</button>
+       <button>0</button>
+       <button>00</button>
+       <button>.</button>
+       <button>del</button>
+       <button>ac</button>
+       <button>=</button>
+      
+    </div>
+
+    <script>
+     let a=document.querySelectorAll("button");
+     for(let i of a){
+      i.onclick=function(){
+      //   let b=i.innerText;
+      //   document.querySelector("input").value +=b;
+        
+        if(i.innerText=='='){
+           let c=document.querySelector("input").value;
+           c=eval(c);
+           document.querySelector("input").value=c;
+           
+         }else if(i.innerText=='ac'){
+            document.querySelector("input").value="";
+         }
+         else if(i.innerText=='del'){
+            let d=document.querySelector("input").value;
+            document.querySelector("input").value=d.slice(0,-1);
+         }
+         else{
+            document.querySelector("input").value+=i.innerText;
+         }
+      }
+     }
+    </script>
 </body>
 </html>
