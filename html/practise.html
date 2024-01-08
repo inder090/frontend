@@ -13,7 +13,7 @@
     <input type="text" name=""  class="inp" placeholder="year"><br>
     <button id="btn">submit</button> -->
 
-    <input type="range" id="slider" min="1" max="50">
+    <!-- <input type="range" id="slider" min="1" max="50"> -->
 
     <script>
         // document.getElementById("btn").onclick=function(){
@@ -45,10 +45,24 @@
             //     document.write(b)
             // }, 1000)
 
-            document.querySelector("#slider").oninput = function(){
-                let a = document.querySelector("#slider").value
-                console.log(a)
+            // document.querySelector("#slider").oninput = function(){
+            //     let a = document.querySelector("#slider").value
+            //     console.log(a)
+            // }
+            let x=[1000,99,440,78,96,63];
+            let y=0;
+            let z=0;
+            for(let i=0;i<x.length;i++){
+                if(x[i]>y){
+                    y=x[i];
+                }
+                if(x[i]>z && x[i]<y){
+                    z=x[i];
+                }
+               
             }
+           
+            console.log(z);
     </script>
 </body>
 </html>
