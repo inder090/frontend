@@ -49,20 +49,26 @@
             //     let a = document.querySelector("#slider").value
             //     console.log(a)
             // }
-            let x=[1000,99,440,78,96,63];
-            let y=0;
-            let z=0;
-            for(let i=0;i<x.length;i++){
-                if(x[i]>y){
-                    y=x[i];
-                }
-                if(x[i]>z && x[i]<y){
-                    z=x[i];
-                }
+            // let x=[1000,99,440,78,96,63];
+            // let y=0;
+            // let z=0;
+            // for(let i=0;i<x.length;i++){
+            //     if(x[i]>y){
+            //         y=x[i];
+            //     }
+            //     if(x[i]>z && x[i]<y){
+            //         z=x[i];
+            //     }
                
-            }
+            // }
            
-            console.log(z);
+            // console.log(z);
+            let a=[100,200,300,400,500];
+            let b=a.shift();
+            let c=a.pop();
+            a.push(b);
+            a.unshift(c);
+            console.log(a); 
     </script>
 </body>
 </html>
