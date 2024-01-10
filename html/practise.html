@@ -63,12 +63,48 @@
             // }
            
             // console.log(z);
-            let a=[100,200,300,400,500];
-            let b=a.shift();
-            let c=a.pop();
-            a.push(b);
-            a.unshift(c);
-            console.log(a); 
+            // let a=[100,200,300,400,500];
+            // let b=a.shift();
+            // let c=a.pop();
+            // a.push(b);
+            // a.unshift(c);
+            // console.log(a); 
+            // let a=[1,2,3,4,5]
+            // let b=a.map(function(i){
+            //     if(i%2!=0){
+            //         return "odd"
+            //     }
+
+            //     return "even"
+            // })
+            // let a=[1,2,-1,-1,'a','A']
+            // let b=a.map(function(i){
+            //     if('A'<=i && i<='Z' || 'a'<=i && i<='z'){
+            //         return 'alphabate'
+            //     }
+            //     else if(0<=i){
+            //         return 'positive'
+            //     }else{
+
+            //         return 'negative'
+            //     }
+            // })
+            // console.log(b)
+            // let a=[1,2,3,4,6,7,8,9,10,5,5,5,5]
+            // let b=a.filter(function(i){
+            //     return i%2==0
+            // })
+            // console.log(b)
+            let a=[1,2,3,4,50000000]
+            let b=a.reduce(function(x,y){
+                if(x>y){
+                    return x
+                }
+                else{
+                    return y
+                }
+            })
+            console.log(b)
     </script>
 </body>
 </html>
