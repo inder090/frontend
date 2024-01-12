@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .img {
+            width: 10%;
+            height: 50vh;
+            border-radius: 20px;
+            background: cover;
+            margin: 5px;
+            display: flex;
+            justify-content: left;
+            align-items: end;
+            color: rgb(8, 255, 255);
+            /* flex: 0.1; */
+        }
+        .img:hover{
+            width: 40%;
+        }
+        /* .img.box{
+            flex: 1;
+        } */
+      
+        .container{
+            display: flex;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>This is expanding cards</h1>
+    <div class="container">
+        <div class="img box"  style="background-image: url('https://www.collinsdictionary.com/images/full/river_377603497_1000.jpg?version=5.0.39');">
+            <h1>Land</h1>
+        </div>
+        <div class="img" style="background-image: url('https://w0.peakpx.com/wallpaper/781/884/HD-wallpaper-mountain-river-mountain-forest-mountain-scenery-river.jpg');">
+               <h1>River</h1> </div>
+        <div class="img" style="background-image: url('https://images.unsplash.com/photo-1593069567131-53a0614dde1d?q=80&w=2532&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');">
+                <h1>Forest</h1></div>
+        <div class="img" style="background-image:url('https://i.natgeofe.com/k/cd784533-e5ef-439a-8167-2ba61b0a9a4b/wave_16x9.jpg?w=1200') ;">
+       <h1>Sea</h1> </div>
+        <div class="img"  style="background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/08/a9/3a/e3/registhan-guest-house.jpg');">
+        <h1>Desret</h1></div>
+    </div>
+    <script>
+        let a=document.querySelectorAll("img").onclick=function(){
+            for(i of a){
+                
+            }
+        }
+    </script>
+</body>
+
+</html>

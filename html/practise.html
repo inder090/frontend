@@ -14,6 +14,15 @@
     <button id="btn">submit</button> -->
 
     <!-- <input type="range" id="slider" min="1" max="50"> -->
+     <input type="text">
+      
+     <button>submit</button>
+    <button>unshift</button>
+    <button>shift</button>
+    <button>join</button>
+    <button>print</button> 
+    <h1 id="no"></h1>
+    
 
     <script>
         // document.getElementById("btn").onclick=function(){
@@ -121,6 +130,49 @@
             // console.log(typeof(b))
             // let a=[10,10,[20,[20,30,[4,6,6],40],20,40],50]
             // console.log(a.flat())
+                // let btn=document.querySelectorAll("button")[0];
+                // let a=[]
+                // let b=[]
+                // btn.addEventListener("click",function(){
+                //     let v=document.querySelector("input").value
+                //     if(v%2==0){
+                //         a.push(v)
+                //         console.log(a)
+                //     }
+                //     else{
+                //         b.push(v)
+                //         console.log(b)
+                //     }
+                // })
+                // let bt=document.querySelectorAll("button")[1];
+                // bt.addEventListener("click",function(){
+                //     document.write("even=")
+                //     document.write(a)
+                //     document.write(b)
+                // })
+                let a=[]
+                
+                document.querySelectorAll("button")[0].onclick=function(){
+                    a+=document.querySelector("input").value
+                }
+                document.querySelectorAll("button")[1].onclick=function(){
+                    let b=a.pop()
+                    a.unshift(b)
+                    document.getElementById("no").innerText=a
+                }
+                document.querySelectorAll("button")[2].onclick=function(){
+                    let b=a.shift()
+                    a.push(b)
+                    // console.log(a)
+                    document.getElementById("no").innerText=a
+                }
+                document.querySelectorAll("button")[3].onclick=function(){
+                    
+                    document.getElementById("no").innerText=a.join(" ")
+                }
+                document.querySelectorAll("button")[4].onclick=function(){
+                    document.getElementById("no").innerText=a
+                }
 
     </script>
 </body>

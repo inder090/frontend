@@ -14,6 +14,10 @@
             padding: 0%;
             margin: 0%;
             box-sizing: border-box;
+            font-family: "Roboto", sans-serif;
+            font-size: 14px;
+            font-weight: normal;
+            cursor: pointer;
         }
 
         .up-head {
@@ -21,31 +25,152 @@
             justify-content: space-between;
             width: 100%;
             background-color: #f6f6f6;
-            padding: 10px;
-            font-weight: 400;
-            font-size: 11px;
+            padding: 8px;
+            /* font-weight: 100; */
+            /* font-size: 5px; */
             font-family: "Roboto", sans-serif;
-            font-weight: normal;
+            /* font-weight: normal; */
         }
-        .left-uh{
-            margin-left: 5rem;
+
+        .left-uh {
+            margin-left: 6rem;
+            font-size:70%;
+           color: #4a4a4a;
         }
-        .right-uh{
+
+        .right-uh {
             margin-right: 5rem;
+            font-size:80%;
+            color: #4a4a4a;
         }
-        .header{
+
+        .header {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 2rem;
+            border: 1px solid black;
+            height: 13vh;
+            padding: 1.5rem;
+            width: 100%;
+            
         }
+        .h-link{
+            margin-right: 4rem;
+            position: relative;
+            width: 50%;
+            border: 1px solid red;
+            height: 13vh;
+            display: flex;
+            /* align-items: center; */
+            justify-content: center;
+            
+        }
+
+        .h-link a{
+            text-decoration: none;
+            line-height: 24px;
+            color:black;
+            margin-right: 2.5rem;
+            height: 100%;
+            border: 1px solid black;
+            /* padding-bottom:33px ; */
+           
+
+           
+        }
+        .h-link a:hover{
+            color: #28a745;;
+        }
+        .h-logo{
+            margin-left: 4rem;
+            display: flex;
+            justify-content: center;
+
+        }
+        .h-icon{
+            padding-right: 4rem;
+            display: flex;
+            justify-content: center;
+        }
+        .h-icon i{
+            padding-right: 20px;
+        }
+        #shop ul{
+            visibility: hidden;            
+            list-style: none;           
+            position: absolute;
+            left: 5.5rem;
+            top:3.5rem;
+            color:black;  
+            background-color: #f6f6f6;         
+
+        }
+        #shop:hover ul{
+            visibility: visible;
+        }
+        #shop ul li{
+            border-bottom: 1px solid rgb(170, 169, 169);
+            padding: 7px;
+        }
+        #shop ul li:hover{
+            color: white;
+            background-color: #28a745;
+        }
+        #blog ul{
+            visibility: hidden;            
+            list-style: none;           
+            position: absolute;
+            left: 11rem;
+            top:3.5rem;
+            color:black;   
+            background-color: #f6f6f6;        
+
+        }
+        #blog:hover ul{
+            visibility: visible;
+        }
+        #blog ul li{
+            border-bottom: 1px solid rgb(170, 169, 169);
+            padding: 7px;
+        }
+        #blog ul li:hover{
+            color: white;
+            background-color: #28a745;
+        }
+        #page ul{
+            visibility: hidden;            
+            list-style: none;           
+            position: absolute;
+            left: 16.5rem;
+            top:3.5rem;
+            color:black; 
+            background-color: #f6f6f6;          
+
+        }
+        #page:hover ul{
+            visibility: visible;
+        }
+        #page ul li{
+            border-bottom: 1px solid rgb(170, 169, 169);
+            padding: 7px;
+        }
+        #page ul li:hover{
+            color: white;
+            background-color: #28a745;
+        }
+        .img{
+            width: 100%;
+            height: 110vh;
+            background-image: url("	https://themewagon.github.io/eiser/img/banner/banner-bg.jpg");
+            /* background-size:cover; */
+        }   
     </style>
 </head>
 
 <body>
     <div class="up-head">
         <div class="left-uh">
-            PHONE: +01 256 25 235   |   EMAIL: INFO@EISER.COM
+            PHONE: +01 256 25 235 | EMAIL: INFO@EISER.COM
         </div>
         <div class="right-uh">
             GIFT CARD | TRACK ORDER | CONTACT US
@@ -57,9 +182,26 @@
         </div>
         <div class="h-link">
             <a href="">HOME</a>
-            <a href="">SHOP</a>
-            <a href="">BLOG</a>
-            <a href="">PAGES</a>
+            <a href="" id="shop">SHOP
+                <ul>
+                    <li>SHOP CATEGORY</li>
+                    <li>PRODUCT DETAILS</li>
+                    <li>PRODUCT CHECKOUT</li>
+                    <li>SHOPING CART</li>
+                </ul>
+            </a>
+            <a href="" id="blog">BLOG
+                <ul>
+                    <li>BLOG</li>
+                    <li>BLOG DETAILS</li>
+                </ul>
+            </a>
+            <a href="" id="page">PAGES
+                <ul>
+                    <li>TRACKING</li>
+                    <li>ELEMENTS</li>
+                </ul>
+            </a>
             <a href="">CONTACT</a>
         </div>
         <div class="h-icon">
@@ -68,6 +210,9 @@
             <i class="fa-regular fa-user"></i>
             <i class="fa-regular fa-heart"></i>
         </div>
+    </div>
+    <div class="img">
+
     </div>
 </body>
 
