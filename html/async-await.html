@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+
+            height: 200px;
+            width: 200px;
+        }
+
+        .box {
+
+            display: inline-block;
+            margin: 10px;
+            box-shadow: 0px 0px 8px;
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+
+
+
+        // console.log("One")
+        // console.log("two")
+        // console.log("three")
+
+        // setTimeout(() => {
+
+        //     for (let i = 0; i < 100000; i++) {
+
+        //         console.log(i)
+        //     }
+
+        // }, 3000)
+
+        // console.log("four")
+        // console.log("five")
+
+
+        // function Output(i) {
+
+        //     i()
+
+        // }
+
+        // function name() {
+
+        //     console.log("mohit")
+        // }
+
+
+        // Output(name)
+
+        // function map(i){
+        //     i()
+        // }
+
+
+        // a.map(()=>{
+
+        // })
+
+
+        // function Party(dishes, order) {
+
+        //     setTimeout(() => {
+
+        //         console.log(dishes)
+        //         if (order) {
+
+        //             order()
+        //         }
+
+        //     }, 3000)
+
+        // }
+
+        // Party("Pizza", () => {
+
+        //     Party("Burger", () => {
+
+        //         Party("Patties", () => {
+
+        //             Party("Cold drink")
+        //         })
+        //     })
+        // }) 
+
+
+        // let prom = new Promise((resolve, reject) => {
+
+        //     if (false) {
+
+        //         resolve("Promise pura huaa")
+        //     }
+        //     else {
+
+        //         reject("Promise reject huaa")
+        //     }
+
+        // })
+
+        // prom.then((result) => {
+
+        //     console.log(result)
+
+        // }).catch((error) => {
+
+        //     console.log(error)
+        // })
+
+        // function Party(dishesh) {
+
+        //     let prom = new Promise((resolve, reject) => {
+
+        //         setTimeout(() => {
+
+        //             resolve(dishesh)
+
+
+        //         }, 3000)
+
+        //     })
+
+        //     return prom
+        // }
+
+        // async function Output() {
+
+        //     try {
+
+
+        //         let pizza = await Party("Pizza");
+        //         console.log(pizza)
+        //         console.log(pizza)
+        //         let bruger = await Party("Burger");
+        //         console.log(bruger)
+        //         let patties = await Party("Patties");
+        //         console.log(patties)
+
+        //     }
+        //     catch (err) {
+        //         console.log("ye meri error h")
+        //     }
+        //     finally {
+
+        //         console.log("me to execute hoe ga")
+        //     }
+
+
+        // }
+
+        // Output()
+
+        // Party("Pizza").then((data) => {
+
+        //     console.log(data)
+
+        //     Party("Burger").then((data) => {
+
+        //         console.log(data)
+
+        //         Party("Patties").then((data) => {
+
+        //             console.log(data)
+        //         })
+        //     })
+
+        // })
+
+
+        // let p = fetch('https://dummyjson.com/recipes');
+        // p.then((response) => {
+
+        //     response.json().then((data) => {
+
+        //         data.recipes.map((d) => {
+
+        //             let di = document.createElement("div");
+        //             di.className = "box"
+        //             let i = document.createElement("img");
+        //             let p = document.createElement("p");
+        //             i.src = d.image
+        //             p.innerText = d.name
+        //             di.append(i)
+        //             di.append(p)
+        //             console.log(di)
+
+
+        //             document.body.append(di)
+
+
+        //         })
+        //     })
+
+        // })
+
+
+        function Outter() {
+            function inu() {
+                let b = 3;
+                console.log(b)
+            }
+
+            let a = 10;
+            function inner() {
+
+                console.log(a);inu()
+
+            }
+
+            return inner
+        }
+
+        let ans = Outter()
+        // console.log(ans)
+        ans()
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
